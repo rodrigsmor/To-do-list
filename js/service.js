@@ -5,6 +5,8 @@ const editInput = document.querySelector('#edit');
 
 var deleteItem = [];
 var editItem = [];
+var modalId;
+var modalName;
 
 function update() {
     deleteItem = document.querySelectorAll('.delete_Item');
@@ -12,6 +14,14 @@ function update() {
 
     editItem.forEach((item) => {
         item.addEventListener('click', () => {
+            let previousElement = item.previousSibling;
+            modalId = previousElement.id;
+
+            for(let i = 0; i < lists.length; i++)
+                if(lists[i].id == modalId)
+                    modalName = lists[i].name;
+
+            editInput.value = modalName;
             modal.classList.add('active')
         })
     });
@@ -35,10 +45,12 @@ function update() {
 
 closeModal.addEventListener('click', () => {
     modal.classList.remove('active');
+    modalId = "";
 });
 
 submitEdit.addEventListener('click', () => {
     if(editInput.value != "") {
+        changeText();
         modal.classList.remove('active');
     }
 });
@@ -46,7 +58,18 @@ submitEdit.addEventListener('click', () => {
 editInput.addEventListener('keypress', (keychar) => {
     if(editInput.value != "") {
         if (keychar.keyCode == 13) {
-          modal.classList.remove('active');
+            changeText();
+            modal.classList.remove('active');
         }
     } 
 });
+
+function changeText() {
+    for(let i = 0; i < lists.length; i++) {
+        if(lists[i].id == modalId) {
+            lists[i].name = editInput.value;
+        }
+    }
+
+    render();
+}
