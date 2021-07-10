@@ -52,6 +52,7 @@ function render() {
 
         const trashButton = document.createElement('button');
         trashButton.classList.add('delete_Item');
+        trashButton.id = list.id;
         trashButton.innerHTML = "<i class='bx bx-trash-alt'></i>";
         divButtons.appendChild(trashButton);
 
