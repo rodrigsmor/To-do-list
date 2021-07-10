@@ -14,6 +14,12 @@ Basically it consists of a to-do list where the user can add a task, remove it, 
 
 ****
 
+- [ ] Responsividade;
+- [x] The User can Possível adicionar uma nova tarefa;
+- [ ] The User can 'Possível editar uma tarefa já adicionada;
+- [ ] The User can 'Possível excluir uma tarefa;
+- [ ] The User can 'Possível marcar uma tarefa como feita;
+
 # 🛸 AUTHOR
 
 <img src="https://avatars.githubusercontent.com/u/78985382?v=4" height="100px">

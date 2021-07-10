@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="./style/style.css">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <title>To do List</title>
     </head>
 
@@ -26,9 +27,7 @@
                         <button id="add">+</button>
                     </form>
                 
-                    <div class="to-dos" id="toDoContainer" data-lists>
-                        
-                    </div>
+                    <div class="to-dos" data-lists></div>
                 </div>
             </div>
 
@@ -39,6 +38,20 @@
             <span class="circles"></span>
         </main>
 
+        <div class="modal">
+            <div class="modal_wrapper">
+                <button class="leave"><i class='bx bx-x'></i></button>
+
+                <label for="">Enter the new task: </label>
+
+                <div>
+                    <input type="text" value="">
+                    <button><i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
         <script src="./js/service.js"></script>
     </body>
 </html>
