@@ -14,7 +14,6 @@ newListForm.addEventListener('submit', function(e) {
     lists.push(list);
     
     render()
-    update()
 });
 
 function createList(name) {
@@ -61,6 +60,8 @@ function render() {
         pencilButton.innerHTML = "<i class='bx bx-pencil'></i>";
         divButtons.appendChild(pencilButton);
     });
+
+    update();
 }
 
 function clearElement(element) {
