@@ -75,7 +75,7 @@ $ cd To-do-list
 ![CSS 3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 
-# 🛸 AUTHOR <i id="autor"> </>
+# 🛸 AUTHOR <i id="autor"> </i>
 
 <img src="https://avatars.githubusercontent.com/u/78985382?v=4" height="100px">
 
@@ -83,4 +83,4 @@ $ cd To-do-list
 🌐 Developed by [ME 👨🏽‍💻](https://github.com/rodrigsmor)
 
 [![Badge Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/psrodrigs)
-[![Badge Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rodrigo-m0reira-da-silva/)
+[![Badge Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rodrigo-m0reira-da-silva/)# To-do-list
